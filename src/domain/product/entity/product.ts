@@ -8,8 +8,7 @@ export default class Product  extends Entity  implements ProductInterface {
   private _price: number;
 
   constructor(id: string, name: string, price: number) {
-    super();
-    this._id = id;
+    super(id);
     this._name = name;
     this._price = price;
     this.validate();
